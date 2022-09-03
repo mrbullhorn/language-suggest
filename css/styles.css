@@ -1,3 +1,21 @@
+.container {
+  background: #59CE8F
+}
+
 .hidden {
   display:none;
+}
+
+
+
+.formBox {
+  width: 25%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border: solid #FF1E00;
+  border-width: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #E8F9FD;
+  box-sizing: border-box;
 }

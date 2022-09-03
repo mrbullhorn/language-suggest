@@ -17,6 +17,10 @@ window.addEventListener("load", function() {
     const hair = document.querySelector("input[name='hairstyle']:checked").value;
     console.log(hair);
   
+    let answerHeading = document.getElementById("recHeader");
+    answerHeading.removeAttribute("class");
+    
+    
     let answerOne = document.getElementById("answer1");
     answerOne.setAttribute("class", "hidden");
     let answerTwo = document.getElementById("answer2");
@@ -24,34 +28,15 @@ window.addEventListener("load", function() {
     let answerThree = document.getElementById("answer3");
     answerThree.setAttribute("class", "hidden");
 
-    if (personality === "pickles") {
+    if (personality === "none" && turtle === "whatever" && breakfast === "notime" && bizkit === "ashamed" && hair === "pompadour") {
+      answerThree.removeAttribute("class");
+    } else if (personality === "pickles" && turtle === "do" && breakfast === "toast" && bizkit === "yes" && hair === "mohawk") {
       answerOne.removeAttribute("class");
+    } else {
+      answerTwo.removeAttribute("class");
     }
-  
-  
-  
-  
-  
-  
-  
-  
   }
-  
-  
-    
-
-    
-    
-    
-
-  
-
- 
-
-    
-
-  
-  )});
+)});
 
 
   
