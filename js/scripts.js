@@ -16,13 +16,30 @@ window.addEventListener("load", function() {
     console.log(bizkit);
     const hair = document.querySelector("input[name='hairstyle']:checked").value;
     console.log(hair);
-    
-      
+  
+    let answerOne = document.getElementById("answer1");
+    answerOne.setAttribute("class", "hidden");
+    let answerTwo = document.getElementById("answer2");
+    answerTwo.setAttribute("class", "hidden");
+    let answerThree = document.getElementById("answer3");
+    answerThree.setAttribute("class", "hidden");
 
-    window.addEventListener("load" , function() {
-      document.getElementById("radio-form").addEventListener("submit", handlePersonality);
-      
-    });
+    if (personality === "pickles") {
+      answerOne.removeAttribute("class");
+    }
+  
+  
+  
+  
+  
+  
+  
+  
+  }
+  
+  
+    
+
     
     
     
@@ -34,7 +51,7 @@ window.addEventListener("load", function() {
     
 
   
-  })});
+  )});
 
 
   
